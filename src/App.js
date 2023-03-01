@@ -7,7 +7,7 @@ import {
   faSearch,
   faHamburger,
   faBars,
-  faHouse
+  faHouse,
 } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -21,7 +21,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/portfolio" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
