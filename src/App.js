@@ -21,7 +21,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/portfolio" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
