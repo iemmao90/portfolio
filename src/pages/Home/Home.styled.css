@@ -10,6 +10,13 @@
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
+@media screen and (max-width: 992px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .main-container div {
   transition: all 0.2s ease-in-out;
   padding: 40px;
@@ -28,6 +35,13 @@
   grid-column-start: 1;
   grid-row-end: 5;
   grid-column-end: 3;
+}
+
+.item-container {
+  background-color: white;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  list-style-type: none;
 }
 
 .right-top-container {

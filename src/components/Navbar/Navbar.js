@@ -25,11 +25,21 @@ const Navbar = () => {
     },
     {
       id: 4,
-      type: 'fa-search',
-      link: '/',
+      type: 'fa-warehouse',
+      link: '/items',
     },
     {
       id: 5,
+      type: 'fa-arrow-right-to-bracket',
+      link: '/login',
+    },
+    {
+      id: 6,
+      type: 'fa-user-plus',
+      link: '/signup',
+    },
+    {
+      id: 7,
       type: 'fa-bars',
       link: '/',
     },
@@ -43,20 +53,21 @@ const Navbar = () => {
       <div className="search">
         {icons.map((icon) => {
           return (
-            <Link to={icon.link}>
-              <div
-                className="nav-tabs"
-                key={icon.id}
-                onClick={() => setSelectedTab(icon.id)}
-                style={
-                  selectedTab === icon.id
-                    ? { backgroundColor: 'blue' }
-                    : { backgroundColor: '#ffffffb3' }
-                }
-              >
-                <FontAwesomeIcon icon={icon.type} className="rotate" />
-              </div>
-            </Link>
+            <div key={icon.id}>
+              <Link to={icon.link}>
+                <div
+                  className="nav-tabs"
+                  onClick={() => setSelectedTab(icon.id)}
+                  style={
+                    selectedTab === icon.id
+                      ? { backgroundColor: 'lightpink' }
+                      : { backgroundColor: '#ffffffb3' }
+                  }
+                >
+                  <FontAwesomeIcon icon={icon.type} className="rotate" />
+                </div>
+              </Link>
+            </div>
           );
         })}
       </div>
