@@ -1,9 +1,6 @@
-import authStore from '../../stores/authStore'
+import Navbar from '../../components/Navbar';
 
 const Profile = () => {
-  const store = authStore();
-
-  
   return <h1>Profile</h1>;
 };
 

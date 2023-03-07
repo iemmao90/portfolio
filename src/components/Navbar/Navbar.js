@@ -3,12 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
 import './Navbar.styled.css';
-import authStore from '../../stores/authStore';
 
 const Navbar = () => {
   const [selectedTab, setSelectedTab] = useState(null);
-
-  const store = authStore()
 
   const icons = [
     {
