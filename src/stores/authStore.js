@@ -79,7 +79,7 @@ const authStore = create((set) => ({
 
     const res = await axios.post('/signup', signupForm);
 
-    console.log(res);
+    console.log('testing', res);
   },
 }));
 
