@@ -60,7 +60,7 @@ const Navbar = () => {
                   onClick={() => setSelectedTab(icon.id)}
                   style={
                     selectedTab === icon.id
-                      ? { backgroundColor: 'lightpink' }
+                      ? { backgroundColor: 'fff' }
                       : { backgroundColor: '#ffffffb3' }
                   }
                 >

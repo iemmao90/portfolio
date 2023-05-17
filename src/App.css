@@ -7,8 +7,8 @@
 body {
   width: 100vw;
   min-height: 100vh;
-  background-color: #bfcfea52;
-  padding: 60px;
+  background-color: white;
+  /* padding: 60px; */
 }
 
 @font-face {
