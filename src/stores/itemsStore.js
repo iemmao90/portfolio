@@ -20,8 +20,6 @@ const itemsStore = create((set) => ({
   fetchItems: async () => {
     // Fetch items
     const res = await axios.get('/items');
-    console.log('hej', res.data.items);
-
     // Set items
     set({
       items: res.data.items,

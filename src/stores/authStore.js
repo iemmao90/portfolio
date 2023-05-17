@@ -78,7 +78,7 @@ const authStore = create((set) => ({
     const { signupForm } = authStore.getState();
     console.log(authStore.getState());
 
-    const res = await axios.post('/hano/signup', signupForm);
+    const res = await axios.post('/signup', signupForm);
 
     console.log('testing', res);
   },
