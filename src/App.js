@@ -11,6 +11,8 @@ import {
   faHouse,
   faArrowRightToBracket,
   faWarehouse,
+  faEye,
+  faEyeSlash,
 } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -33,7 +35,10 @@ function App() {
     faBars,
     faHouse,
     faArrowRightToBracket,
-    faWarehouse
+    faWarehouse,
+    faArrowRightToBracket,
+    faEye,
+    faEyeSlash
   );
 
   return (

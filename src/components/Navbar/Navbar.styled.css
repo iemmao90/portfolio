@@ -1,51 +1,101 @@
 .top-nav {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  padding-top: 20px;
-  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+  background-color: #fff;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0rem 3rem 6.25rem 0rem; */
 }
 
 .top-nav div {
   display: flex;
-  width: 100%;
-  color: #9ab3dfad;
 }
 
 .info {
   justify-content: flex-start;
   align-items: center;
-  flex: 3;
-  padding: 0 40px;
   font-family: 'Iemmao', 'Roboto', sans-serif;
-  font-size: larger;
+  font-size: large;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 0.375rem;
+  flex: 1;
 }
 
 .info h1 {
   color: #9ab3dfad;
 }
 
-.search {
+.links {
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.search div {
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 40px;
-  /*   border-radius: 8px 8px 0 0; */
-  background-color: white;
+  flex: 1;
+}
+
+.links div {
+  justify-content: center;
+  align-items: center;
+  width: 4.375rem;
+  height: 2.5rem;
   font-size: x-large;
 }
 
-.rotate {
+.nav-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.125rem;
+  background: none;
+  border: none;
+  font-size: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-links {
+  text-decoration: none;
+}
+
+.link-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: lighter;
+  letter-spacing: 0.0625rem;
+  color: rgb(105, 105, 105);
+}
+
+.user-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1rem;
+  flex: 1;
+}
+
+.user-links button {
+  padding: 0.5rem 1rem;
+  border: 0.0625rem solid rgb(105, 105, 105);
+  border-radius: 0.5rem;
+  background-color: white;
+  color: rgb(105, 105, 105);
+  font-size: 1rem;
+}
+
+.user-links button:hover {
+  background-color: rgba(243, 243, 243, 0.756);
+  transform: scale(1.02);
+  color: rgb(69, 69, 69);
+}
+
+.nav-icons {
+  color: #9ab3dfad;
   transition: transform 0.5s ease;
 }
 
-.rotate:hover {
+.nav-icons:hover {
   transform: scale(1.2);
 }
